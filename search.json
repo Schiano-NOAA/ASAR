@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "NOAA Automated Stock Assessment Reporting (ASAR)",
     "section": "",
-    "text": "Test change to page.",
+    "text": "THIS PAGE IS UNDER CONSTRUCTION",
     "crumbs": [
       "Home"
     ]
@@ -13,8 +13,8 @@
     "objectID": "index.html#getting-started",
     "href": "index.html#getting-started",
     "title": "NOAA Automated Stock Assessment Reporting (ASAR)",
-    "section": "",
-    "text": "Test change to page.",
+    "section": "Getting Started",
+    "text": "Getting Started\nTest change to page.",
     "crumbs": [
       "Home"
     ]
@@ -34,7 +34,7 @@
     "href": "index.html#additional-features",
     "title": "NOAA Automated Stock Assessment Reporting (ASAR)",
     "section": "Additional Features",
-    "text": "Additional Features\nAdding test documentation for deploying pages.",
+    "text": "Additional Features\nAdding test documentation for deploying pages.\nAdd another test paragraph for new action.",
     "crumbs": [
       "Home"
     ]
