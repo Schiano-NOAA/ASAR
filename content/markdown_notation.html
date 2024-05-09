@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ASAR - NOAA Automated Stock Assessment Reporting (ASAR)</title>
+<title>ASAR - markdown</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,28 +20,63 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./content/manual.html" rel="next">
-<link href="./website/favicon.ico" rel="icon">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../content/acknowledgements.html" rel="next">
+<link href="../content/regional_workflows.html" rel="prev">
+<link href="../website/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -82,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/markdown_notation.html">Markdown</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -92,15 +127,15 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./content/images/&quot;NOAA_FISHERIES_logoH.png&quot;" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../content/images/&quot;NOAA_FISHERIES_logoH.png&quot;" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
-    <a href="./schiano-noaa.github.io/ASAR/" title="Stock Assessment Report Templates" class="quarto-navigation-tool px-1" aria-label="Stock Assessment Report Templates"><i class="bi bi-globe"></i></a>
+    <a href="../schiano-noaa.github.io/ASAR/" title="Stock Assessment Report Templates" class="quarto-navigation-tool px-1" aria-label="Stock Assessment Report Templates"><i class="bi bi-globe"></i></a>
     <a href="https://github.com/Schiano-NOAA/ASAR" title="ASAR" class="quarto-navigation-tool px-1" aria-label="ASAR"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
@@ -114,31 +149,31 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./content/manual.html" class="sidebar-item-text sidebar-link">
+  <a href="../content/manual.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Manual</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./content/regional_workflows.html" class="sidebar-item-text sidebar-link">
+  <a href="../content/regional_workflows.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Regional Workflows</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./content/markdown_notation.html" class="sidebar-item-text sidebar-link">
+  <a href="../content/markdown_notation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Markdown</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./content/acknowledgements.html" class="sidebar-item-text sidebar-link">
+  <a href="../content/acknowledgements.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Acknowledgements</span></a>
   </div>
 </li>
@@ -152,24 +187,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link active" data-scroll-target="#getting-started">Getting Started</a></li>
-  <li><a href="#the-workflow" id="toc-the-workflow" class="nav-link" data-scroll-target="#the-workflow">The Workflow</a></li>
-  <li><a href="#additional-features" id="toc-additional-features" class="nav-link" data-scroll-target="#additional-features">Additional Features</a></li>
+  <li><a href="#markdown-notation" id="toc-markdown-notation" class="nav-link active" data-scroll-target="#markdown-notation">Markdown Notation</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/Schiano-NOAA/ASAR/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Schiano-NOAA/ASAR/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Schiano-NOAA/ASAR/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/Schiano-NOAA/ASAR/edit/main/content/markdown_notation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Schiano-NOAA/ASAR/blob/main/content/markdown_notation.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Schiano-NOAA/ASAR/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">NOAA Automated Stock Assessment Reporting (ASAR)</h1>
-<p class="subtitle lead">Partially Automated and Standardized Templates</p>
+<h1 class="title">markdown</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-body">
+<div class="quarto-title-meta">
 
     
   
@@ -181,18 +213,26 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>THIS PAGE IS UNDER CONSTRUCTION</strong></p>
-<section id="getting-started" class="level2">
-<h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
-<p>Test change to page.</p>
-</section>
-<section id="the-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="the-workflow">The Workflow</h2>
-</section>
-<section id="additional-features" class="level2">
-<h2 class="anchored" data-anchor-id="additional-features">Additional Features</h2>
-<p>Adding test documentation for deploying pages.</p>
-<p>Add another test paragraph for new action.</p>
+<section id="markdown-notation" class="level2">
+<h2 class="anchored" data-anchor-id="markdown-notation">Markdown Notation</h2>
+<p>Efficiently using this package in the stock assessment workflow requires a basic understanding of markdown notation. Google docs easily recognizes these types of calls and formats it during writing.</p>
+<p>Any in-text markdown within google docs can be brought into the local template using the function <code>update_local()</code>. This reference is intended to help the user smoothly incorporate markdown language into plain text so the features of <code>ASAR</code> can easily incorporate into the workflow.</p>
+<p>In order to add a piece of code into the text directly encase R code within a pair of backticks (`). For example:</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>params<span class="sc">$</span>region</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "NWFSC"</code></pre>
+</div>
+</div>
+<p>The above example shows how one would incorporate the <em>region</em> parameter into a sentence in a markdown or quarto file. In google docs, this notation formatted to green and the font roboto mono.</p>
+<p>If we definited the parameter of region as NWFSC, the result would render as NWFSC</p>
+<p>Other ways to incorporate markdown notation include:</p>
+<ul>
+<li>in-line calculations: \4 resulting in 4</li>
+</ul>
 
 
 </section>
@@ -751,12 +791,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation column-body">
+<nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../content/regional_workflows.html" class="pagination-link" aria-label="Regional Workflows">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Regional Workflows</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./content/manual.html" class="pagination-link" aria-label="Manual">
-        <span class="nav-page-text">Manual</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/acknowledgements.html" class="pagination-link" aria-label="Acknowledgements">
+        <span class="nav-page-text">Acknowledgements</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -768,7 +811,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Schiano-NOAA/ASAR/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Schiano-NOAA/ASAR/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Schiano-NOAA/ASAR/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Schiano-NOAA/ASAR/edit/main/content/markdown_notation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Schiano-NOAA/ASAR/blob/main/content/markdown_notation.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Schiano-NOAA/ASAR/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

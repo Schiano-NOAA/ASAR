@@ -40,13 +40,23 @@
     ]
   },
   {
-    "objectID": "content/acknowledgements.html",
-    "href": "content/acknowledgements.html",
-    "title": "Acknowledgments",
+    "objectID": "content/markdown_notation.html",
+    "href": "content/markdown_notation.html",
+    "title": "markdown",
     "section": "",
-    "text": "This page and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland.",
+    "text": "Efficiently using this package in the stock assessment workflow requires a basic understanding of markdown notation. Google docs easily recognizes these types of calls and formats it during writing.\nAny in-text markdown within google docs can be brought into the local template using the function update_local(). This reference is intended to help the user smoothly incorporate markdown language into plain text so the features of ASAR can easily incorporate into the workflow.\nIn order to add a piece of code into the text directly encase R code within a pair of backticks (`). For example:\n\n\nShow the code\nparams$region\n\n\n[1] \"NWFSC\"\n\n\nThe above example shows how one would incorporate the region parameter into a sentence in a markdown or quarto file. In google docs, this notation formatted to green and the font roboto mono.\nIf we definited the parameter of region as NWFSC, the result would render as NWFSC\nOther ways to incorporate markdown notation include:\n\nin-line calculations: \\4 resulting in 4",
     "crumbs": [
-      "Acknowledgements"
+      "Markdown"
+    ]
+  },
+  {
+    "objectID": "content/markdown_notation.html#markdown-notation",
+    "href": "content/markdown_notation.html#markdown-notation",
+    "title": "markdown",
+    "section": "",
+    "text": "Efficiently using this package in the stock assessment workflow requires a basic understanding of markdown notation. Google docs easily recognizes these types of calls and formats it during writing.\nAny in-text markdown within google docs can be brought into the local template using the function update_local(). This reference is intended to help the user smoothly incorporate markdown language into plain text so the features of ASAR can easily incorporate into the workflow.\nIn order to add a piece of code into the text directly encase R code within a pair of backticks (`). For example:\n\n\nShow the code\nparams$region\n\n\n[1] \"NWFSC\"\n\n\nThe above example shows how one would incorporate the region parameter into a sentence in a markdown or quarto file. In google docs, this notation formatted to green and the font roboto mono.\nIf we definited the parameter of region as NWFSC, the result would render as NWFSC\nOther ways to incorporate markdown notation include:\n\nin-line calculations: \\4 resulting in 4",
+    "crumbs": [
+      "Markdown"
     ]
   },
   {
@@ -77,6 +87,36 @@
     "text": "Regional Stock Assessment Workflows\n[Insert copy of tech memo?]",
     "crumbs": [
       "Regional Workflows"
+    ]
+  },
+  {
+    "objectID": "content/acknowledgements.html",
+    "href": "content/acknowledgements.html",
+    "title": "Acknowledgments",
+    "section": "",
+    "text": "This page and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland.",
+    "crumbs": [
+      "Acknowledgements"
+    ]
+  },
+  {
+    "objectID": "content/manual.html",
+    "href": "content/manual.html",
+    "title": "Tool Manual",
+    "section": "",
+    "text": "The overarching function to create or pull a stock assessment report template is create_template(). This is the first function the analyst will call to develop a stock assessment report. This step comes after running the stock assessment model and performing necessary diagnostics.",
+    "crumbs": [
+      "Manual"
+    ]
+  },
+  {
+    "objectID": "content/manual.html#navigation",
+    "href": "content/manual.html#navigation",
+    "title": "Tool Manual",
+    "section": "",
+    "text": "The overarching function to create or pull a stock assessment report template is create_template(). This is the first function the analyst will call to develop a stock assessment report. This step comes after running the stock assessment model and performing necessary diagnostics.",
+    "crumbs": [
+      "Manual"
     ]
   },
   {
