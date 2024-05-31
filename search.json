@@ -114,7 +114,7 @@
     "href": "content/developer_reference.html",
     "title": "Developer Reference",
     "section": "",
-    "text": "Organization for utility functions for google drive connections as developed by the trackdown team and modified by the developers of ASAR. (Links to be added after merge.)\n\n\n\n\nmain_process (utils.R)\nevaluate_file (utils.R)\n\nget_file_info (utils.R)\nget_dribble_info (utils_dribble.R)\n\ncheck_supported_documents (utils.R)\nrestore_file (utils_chunk.R)\n\nremove_google_comments (utils.R)\neval_instructions (utils.R)\nrestore_code (utils_chunk.R)\nsanitize_document (utils.R)\nload_code (utils.R)\nstart_process (utils.R)\nrestore_chunk (utils_chunk.R)\n\ncheck_identity (utils.R)\nfinish_process (utils.R)\n\n\n\n\nupload_document (utils.R)\nupload_output ()",
+    "text": "Organization for utility functions for google drive connections as developed by the trackdown team and modified by the developers of ASAR. (Links to be added after merge.)\n\n\n\n\nmain_process (utils.R)\nevaluate_file (utils.R)\n\nget_file_info (utils.R)\nget_dribble_info (utils_dribble.R)\n\ncheck_supported_documents (utils.R)\nrestore_file (utils_chunk.R)\n\nremove_google_comments (utils.R)\neval_instructions (utils.R)\nrestore_code (utils_chunk.R)\nsanitize_document (utils.R)\nload_code (utils.R)\nstart_process (utils.R)\nrestore_chunk (utils_chunk.R)\n\ncheck_identity (utils.R)\nfinish_process (utils.R)\n\n\n\n\nupload_document (utils.R)\nupload_output ()\nhide_code (utils_chunk.R)",
     "crumbs": [
       "Developer References"
     ]
@@ -124,7 +124,7 @@
     "href": "content/developer_reference.html#function-organization",
     "title": "Developer Reference",
     "section": "",
-    "text": "Organization for utility functions for google drive connections as developed by the trackdown team and modified by the developers of ASAR. (Links to be added after merge.)\n\n\n\n\nmain_process (utils.R)\nevaluate_file (utils.R)\n\nget_file_info (utils.R)\nget_dribble_info (utils_dribble.R)\n\ncheck_supported_documents (utils.R)\nrestore_file (utils_chunk.R)\n\nremove_google_comments (utils.R)\neval_instructions (utils.R)\nrestore_code (utils_chunk.R)\nsanitize_document (utils.R)\nload_code (utils.R)\nstart_process (utils.R)\nrestore_chunk (utils_chunk.R)\n\ncheck_identity (utils.R)\nfinish_process (utils.R)\n\n\n\n\nupload_document (utils.R)\nupload_output ()",
+    "text": "Organization for utility functions for google drive connections as developed by the trackdown team and modified by the developers of ASAR. (Links to be added after merge.)\n\n\n\n\nmain_process (utils.R)\nevaluate_file (utils.R)\n\nget_file_info (utils.R)\nget_dribble_info (utils_dribble.R)\n\ncheck_supported_documents (utils.R)\nrestore_file (utils_chunk.R)\n\nremove_google_comments (utils.R)\neval_instructions (utils.R)\nrestore_code (utils_chunk.R)\nsanitize_document (utils.R)\nload_code (utils.R)\nstart_process (utils.R)\nrestore_chunk (utils_chunk.R)\n\ncheck_identity (utils.R)\nfinish_process (utils.R)\n\n\n\n\nupload_document (utils.R)\nupload_output ()\nhide_code (utils_chunk.R)",
     "crumbs": [
       "Developer References"
     ]
