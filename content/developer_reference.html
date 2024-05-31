@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ASAR - Acknowledgments</title>
+<title>ASAR - Developer Reference</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,7 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/developer_reference.html" rel="prev">
+<link href="../content/acknowledgements.html" rel="next">
+<link href="../content/markdown_notation.html" rel="prev">
 <link href="../website/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -82,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/acknowledgements.html">Acknowledgements</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/developer_reference.html">Developer References</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -138,13 +139,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/developer_reference.html" class="sidebar-item-text sidebar-link">
+  <a href="../content/developer_reference.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Developer References</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/acknowledgements.html" class="sidebar-item-text sidebar-link active">
+  <a href="../content/acknowledgements.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Acknowledgements</span></a>
   </div>
 </li>
@@ -154,14 +155,24 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#function-organization" id="toc-function-organization" class="nav-link active" data-scroll-target="#function-organization">Function Organization</a>
+  <ul class="collapse">
+  <li><a href="#main-functions" id="toc-main-functions" class="nav-link" data-scroll-target="#main-functions">Main Functions</a></li>
+  <li><a href="#upload_files.r" id="toc-upload_files.r" class="nav-link" data-scroll-target="#upload_files.r"><code>upload_files.R</code></a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/Schiano-NOAA/ASAR/edit/main/content/developer_reference.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Schiano-NOAA/ASAR/blob/main/content/developer_reference.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Schiano-NOAA/ASAR/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Acknowledgments</h1>
+<h1 class="title">Developer Reference</h1>
 </div>
 
 
@@ -178,9 +189,42 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This page and GitHub Action was based on the tutorial by Openscapes <a href="https://github.com/Openscapes/quarto-website-tutorial">quarto-website-tutorial</a> by Julia Lowndes and Stefanie Butland.</p>
+<section id="function-organization" class="level2">
+<h2 class="anchored" data-anchor-id="function-organization">Function Organization</h2>
+<p>Organization for utility functions for google drive connections as developed by the <code>trackdown</code> team and modified by the developers of <code>ASAR</code>. (Links to be added after merge.)</p>
+<section id="main-functions" class="level3">
+<h3 class="anchored" data-anchor-id="main-functions">Main Functions</h3>
+<section id="download_files.r" class="level4">
+<h4 class="anchored" data-anchor-id="download_files.r"><code>download_files.R</code></h4>
+<p><code>main_process</code> (<code>utils.R</code>)</p>
+<p><code>evaluate_file</code> (<code>utils.R</code>)</p>
+<ul>
+<li><p><code>get_file_info</code> (<code>utils.R</code>)</p></li>
+<li><p><code>get_dribble_info</code> (<code>utils_dribble.R</code>)</p></li>
+</ul>
+<p><code>check_supported_documents</code> (<code>utils.R</code>)</p>
+<p><code>restore_file</code> (<code>utils_chunk.R</code>)</p>
+<ul>
+<li><p><code>remove_google_comments</code> (<code>utils.R</code>)</p></li>
+<li><p><code>eval_instructions</code> (<code>utils.R</code>)</p></li>
+<li><p><code>restore_code</code> (<code>utils_chunk.R</code>)</p></li>
+<li><p><code>sanitize_document</code> (<code>utils.R</code>)</p></li>
+<li><p><code>load_code</code> (<code>utils.R</code>)</p></li>
+<li><p><code>start_process</code> (<code>utils.R</code>)</p></li>
+<li><p><code>restore_chunk</code> (<code>utils_chunk.R</code>)</p></li>
+</ul>
+<p><code>check_identity</code> (<code>utils.R</code>)</p>
+<p><code>finish_process</code> (<code>utils.R</code>)</p>
+</section>
+</section>
+<section id="upload_files.r" class="level3">
+<h3 class="anchored" data-anchor-id="upload_files.r"><code>upload_files.R</code></h3>
+<p><code>upload_document</code> (<code>utils.R</code>)</p>
+<p><code>upload_output</code> ()</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -738,11 +782,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../content/developer_reference.html" class="pagination-link" aria-label="Developer References">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Developer References</span>
+      <a href="../content/markdown_notation.html" class="pagination-link" aria-label="Markdown">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Markdown</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../content/acknowledgements.html" class="pagination-link" aria-label="Acknowledgements">
+        <span class="nav-page-text">Acknowledgements</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -753,7 +800,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/Schiano-NOAA/ASAR/edit/main/content/acknowledgements.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Schiano-NOAA/ASAR/blob/main/content/acknowledgements.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Schiano-NOAA/ASAR/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Schiano-NOAA/ASAR/edit/main/content/developer_reference.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Schiano-NOAA/ASAR/blob/main/content/developer_reference.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Schiano-NOAA/ASAR/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

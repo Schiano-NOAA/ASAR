@@ -40,26 +40,6 @@
     ]
   },
   {
-    "objectID": "content/markdown_notation.html",
-    "href": "content/markdown_notation.html",
-    "title": "markdown",
-    "section": "",
-    "text": "Efficiently using this package in the stock assessment workflow requires a basic understanding of markdown notation. Google docs easily recognizes these types of calls and formats it during writing.\nAny in-text markdown within google docs can be brought into the local template using the function update_local(). This reference is intended to help the user smoothly incorporate markdown language into plain text so the features of ASAR can easily incorporate into the workflow.\nIn order to add a piece of code into the text directly encase R code within a pair of backticks (`). For example:\n\n\nShow the code\nparams$region\n\n\nThe above example shows how one would incorporate the region parameter into a sentence in a markdown or quarto file. In google docs, this notation formatted to green and the font roboto mono.\nIf we definited the parameter of region as NWFSC, the result would render as NWFSC\nOther ways to incorporate markdown notation include:\n\nin-line calculations: \\4 resulting in 4",
-    "crumbs": [
-      "Markdown"
-    ]
-  },
-  {
-    "objectID": "content/markdown_notation.html#markdown-notation",
-    "href": "content/markdown_notation.html#markdown-notation",
-    "title": "markdown",
-    "section": "",
-    "text": "Efficiently using this package in the stock assessment workflow requires a basic understanding of markdown notation. Google docs easily recognizes these types of calls and formats it during writing.\nAny in-text markdown within google docs can be brought into the local template using the function update_local(). This reference is intended to help the user smoothly incorporate markdown language into plain text so the features of ASAR can easily incorporate into the workflow.\nIn order to add a piece of code into the text directly encase R code within a pair of backticks (`). For example:\n\n\nShow the code\nparams$region\n\n\nThe above example shows how one would incorporate the region parameter into a sentence in a markdown or quarto file. In google docs, this notation formatted to green and the font roboto mono.\nIf we definited the parameter of region as NWFSC, the result would render as NWFSC\nOther ways to incorporate markdown notation include:\n\nin-line calculations: \\4 resulting in 4",
-    "crumbs": [
-      "Markdown"
-    ]
-  },
-  {
     "objectID": "content/regional_workflows.html",
     "href": "content/regional_workflows.html",
     "title": "Regional Workflows",
@@ -127,6 +107,46 @@
     "text": "Workflow\nHere will be the location for the workflow and navigation of using this R package.",
     "crumbs": [
       "Manual"
+    ]
+  },
+  {
+    "objectID": "content/developer_reference.html",
+    "href": "content/developer_reference.html",
+    "title": "Developer Reference",
+    "section": "",
+    "text": "Organization for utility functions for google drive connections as developed by the trackdown team and modified by the developers of ASAR. (Links to be added after merge.)\n\n\n\n\nmain_process (utils.R)\nevaluate_file (utils.R)\n\nget_file_info (utils.R)\nget_dribble_info (utils_dribble.R)\n\ncheck_supported_documents (utils.R)\nrestore_file (utils_chunk.R)\n\nremove_google_comments (utils.R)\neval_instructions (utils.R)\nrestore_code (utils_chunk.R)\nsanitize_document (utils.R)\nload_code (utils.R)\nstart_process (utils.R)\nrestore_chunk (utils_chunk.R)\n\ncheck_identity (utils.R)\nfinish_process (utils.R)\n\n\n\n\nupload_document (utils.R)\nupload_output ()",
+    "crumbs": [
+      "Developer References"
+    ]
+  },
+  {
+    "objectID": "content/developer_reference.html#function-organization",
+    "href": "content/developer_reference.html#function-organization",
+    "title": "Developer Reference",
+    "section": "",
+    "text": "Organization for utility functions for google drive connections as developed by the trackdown team and modified by the developers of ASAR. (Links to be added after merge.)\n\n\n\n\nmain_process (utils.R)\nevaluate_file (utils.R)\n\nget_file_info (utils.R)\nget_dribble_info (utils_dribble.R)\n\ncheck_supported_documents (utils.R)\nrestore_file (utils_chunk.R)\n\nremove_google_comments (utils.R)\neval_instructions (utils.R)\nrestore_code (utils_chunk.R)\nsanitize_document (utils.R)\nload_code (utils.R)\nstart_process (utils.R)\nrestore_chunk (utils_chunk.R)\n\ncheck_identity (utils.R)\nfinish_process (utils.R)\n\n\n\n\nupload_document (utils.R)\nupload_output ()",
+    "crumbs": [
+      "Developer References"
+    ]
+  },
+  {
+    "objectID": "content/markdown_notation.html",
+    "href": "content/markdown_notation.html",
+    "title": "markdown",
+    "section": "",
+    "text": "Efficiently using this package in the stock assessment workflow requires a basic understanding of markdown notation. Google docs easily recognizes these types of calls and formats it during writing.\nAny in-text markdown within google docs can be brought into the local template using the function update_local(). This reference is intended to help the user smoothly incorporate markdown language into plain text so the features of ASAR can easily incorporate into the workflow.\nIn order to add a piece of code into the text directly encase R code within a pair of backticks (`). For example:\n\n\nShow the code\nparams$region\n\n\nThe above example shows how one would incorporate the region parameter into a sentence in a markdown or quarto file. In google docs, this notation formatted to green and the font roboto mono.\nIf we definited the parameter of region as NWFSC, the result would render as NWFSC\nOther ways to incorporate markdown notation include:\n\nin-line calculations: \\4 resulting in 4",
+    "crumbs": [
+      "Markdown"
+    ]
+  },
+  {
+    "objectID": "content/markdown_notation.html#markdown-notation",
+    "href": "content/markdown_notation.html#markdown-notation",
+    "title": "markdown",
+    "section": "",
+    "text": "Efficiently using this package in the stock assessment workflow requires a basic understanding of markdown notation. Google docs easily recognizes these types of calls and formats it during writing.\nAny in-text markdown within google docs can be brought into the local template using the function update_local(). This reference is intended to help the user smoothly incorporate markdown language into plain text so the features of ASAR can easily incorporate into the workflow.\nIn order to add a piece of code into the text directly encase R code within a pair of backticks (`). For example:\n\n\nShow the code\nparams$region\n\n\nThe above example shows how one would incorporate the region parameter into a sentence in a markdown or quarto file. In google docs, this notation formatted to green and the font roboto mono.\nIf we definited the parameter of region as NWFSC, the result would render as NWFSC\nOther ways to incorporate markdown notation include:\n\nin-line calculations: \\4 resulting in 4",
+    "crumbs": [
+      "Markdown"
     ]
   }
 ]
